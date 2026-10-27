@@ -1,0 +1,55 @@
+# --- Секреты: никогда в GitHub ---
+.env
+.env.*
+*-key.json
+*key*.json
+*token*.json
+*credentials*
+*.pem
+*.p12
+
+# --- Медиа и документы: живут на общем диске Google ---
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.heic
+*.gif
+*.tif
+*.tiff
+*.psd
+*.ai
+*.fig
+*.mov
+*.mp4
+*.m4v
+*.avi
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.m4a
+*.zip
+*.rar
+*.7z
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.pptx
+*.key
+*.numbers
+*.pages
+# (когда начнётся сайт: разрешить его картинки строкой вида !site/**/*.webp)
+
+# --- Рабочие и служебные файлы ---
+_work/
+.claude/settings.local.json
+CLAUDE.local.md
+.DS_Store
+Thumbs.db
+~$*
+__pycache__/
+*.pyc
+.venv/

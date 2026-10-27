@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run crm/crm.py *)",
+      "Bash(git status*)",
+      "Bash(git pull*)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git branch*)",
+      "Bash(git switch *)"
+    ],
+    "deny": [
+      "Read(~/.config/kontent-zavod/**)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git reset --hard*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && if [ \"$(git branch --show-current)\" = main ]; then git pull --ff-only --quiet 2>&1 || echo 'ВНИМАНИЕ: правила не обновились из GitHub — сообщи Роберту'; fi"
+          }
+        ]
+      }
+    ]
+  }
+}
