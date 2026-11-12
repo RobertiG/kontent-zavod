@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Контент завод — карточка готова, пока товар едет</title>
+<meta name="description" content="Видео, слайды, RICH и SEO для карточек Wildberries и Ozon, коробка и инструкция на русском. Начинаем, пока груз едет из Китая. Делают нейросети, каждый кадр проверяет человек.">
+<meta name="theme-color" content="#E4E5E6">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/roboto-flex-cyr.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/qh17-cut-900.webp" imagesrcset="assets/img/qh17-cut-560.webp 560w, assets/img/qh17-cut-900.webp 900w, assets/img/qh17-cut-1400.webp 1400w" imagesizes="(min-width: 1024px) 560px, 92vw" fetchpriority="high">
+<script>
+  /* Режим показа: .motion — сцены на прокрутке; без него — раскадровка (нет JS, «уменьшить движение», сбой). */
+  (function () {
+    var d = document.documentElement, n = navigator, c = n.connection || {};
+    d.classList.remove('no-js');
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('motion');
+    if (c.saveData || (n.deviceMemory && n.deviceMemory < 4) || (n.hardwareConcurrency && n.hardwareConcurrency < 4)) d.classList.add('lite');
+    window.__kzFallback = setTimeout(function () { d.classList.remove('motion'); }, 4000);
+  })();
+</script>
+<link rel="stylesheet" href="css/site.css">
+<script defer src="vendor/gsap.min.js"></script>
+<script defer src="vendor/ScrollTrigger.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip-to" href="#main">К содержимому</a>
+
+<header class="top" id="top">
+  <a class="logo" href="#top" aria-label="Контент завод — в начало">
+    <svg class="logo-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6.5"/><path d="M12 1v22M1 12h22"/></svg>
+    <span class="logo-word">контент завод</span>
+  </a>
+  <nav class="top-nav" aria-label="Разделы">
+    <a href="#raboty">Работы</a>
+    <a href="#ceny">Цены</a>
+    <a href="#zakaz">Как заказать</a>
+    <a href="#partneram">Партнёрам</a>
+  </nav>
+  <!-- ЗАГЛУШКА: контакт студии в Telegram -->
+  <a class="btn btn-k top-cta" href="https://t.me/kontent_zavod" target="_blank" rel="noopener">Написать в Telegram</a>
+</header>
+
+<nav class="rail" aria-label="Где вы на странице">
+  <ol>
+    <li><a href="#kartochka" data-rail="kartochka"><span>Сборка карточки</span></a></li>
+    <li><a href="#oblozhka" data-rail="oblozhka"><span>Видеообложка</span></a></li>
+    <li><a href="#ceny" data-rail="ceny"><span>Цены</span></a></li>
+    <li><a href="#ishodniki" data-rail="ishodniki"><span>Исходники</span></a></li>
+    <li><a href="#korobka" data-rail="korobka"><span>Коробка</span></a></li>
+    <li><a href="#instrukciya" data-rail="instrukciya"><span>Инструкция</span></a></li>
+    <li><a href="#seo" data-rail="seo"><span>SEO</span></a></li>
+    <li><a href="#rich" data-rail="rich"><span>RICH</span></a></li>
+    <li><a href="#raboty" data-rail="raboty"><span>Работы</span></a></li>
+    <li><a href="#pakety" data-rail="pakety"><span>Пакеты</span></a></li>
+    <li><a href="#zakaz" data-rail="zakaz"><span>Как идёт заказ</span></a></li>
+    <li><a href="#partneram" data-rail="partneram"><span>Партнёрам</span></a></li>
+    <li><a href="#voprosy" data-rail="voprosy"><span>Вопросы</span></a></li>
+  </ol>
+</nav>
+
+<main id="main">
+
+<!-- 1. Первый экран и сборка карточки: лист с исходником и есть сцена -->
+<section class="scene scene-card" id="kartochka" data-scene="card" aria-labelledby="hero-title">
+  <div class="scene-sticky card-sticky">
+    <div class="hero-copy">
+      <h1 id="hero-title" class="h-display">Товар ещё едет, а&nbsp;карточка уже готова</h1>
+      <p class="lead">Фото, видео и слайды для Wildberries и Ozon, коробка и инструкция на русском. Начинаем, пока груз едет из Китая. Делают нейросети, каждый кадр проверяет человек.</p>
+      <div class="hero-actions">
+        <a class="btn btn-k" href="https://t.me/kontent_zavod" target="_blank" rel="noopener">Написать в Telegram</a>
+        <a class="btn btn-line" href="#ceny">Посмотреть цены</a>
+      </div>
+      <ul class="hero-prices" aria-label="Цены">
+        <li><span>Обложка для выдачи</span> <b class="price">999&nbsp;₽</b></li>
+        <li><span>Карточка под ключ</span> <b class="price">13&nbsp;199&nbsp;₽</b></li>
+        <li class="sticker">−10 % на первый заказ за подписку на «Проще»</li>
+      </ul>
+    </div>
+
+    <ol class="card-steps" aria-label="Как собирается слайд карточки">
+      <li data-step="0"><b>Исходник</b> Чистое фото товара на белом фоне — с него начинаем</li>
+      <li data-step="1"><b>Сцена</b> Товар там, где им пользуются: кухня, продукты в пакете</li>
+      <li data-step="2"><b>Плашки</b> Выгоды крупно и коротко, по сетке, которую не закроют значки площадки</li>
+      <li data-step="3"><b>Заголовок</b> Словами покупателя, читается с телефона</li>
+      <li data-step="4"><b>В выдаче</b> Ставим к соседям: тот же товар продают с одинаковыми фото фабрики</li>
+      <li data-step="5"><b>Издалека</b> Прищурьтесь: свою карточку видно сразу</li>
+    </ol>
+
+    <div class="card-area">
+      <div class="feed" aria-hidden="true">
+        <div class="feed-grid">
+          <figure class="tile"><img src="assets/img/feed-1-360.webp" alt="" width="360" height="480" loading="lazy" decoding="async"><figcaption><i></i><i></i><b>4 290 ₽</b></figcaption></figure>
+          <figure class="tile"><img src="assets/img/feed-2-360.webp" alt="" width="360" height="480" loading="lazy" decoding="async"><figcaption><i></i><i></i><b>3 870 ₽</b></figcaption></figure>
+          <figure class="tile tile-ours" data-slot><div class="tile-slot"></div><figcaption><i></i><i></i><b>4 190 ₽</b></figcaption></figure>
+          <figure class="tile"><img src="assets/img/feed-3-360.webp" alt="" width="360" height="480" loading="lazy" decoding="async"><figcaption><i></i><i></i><b>4 650 ₽</b></figcaption></figure>
+          <figure class="tile"><img src="assets/img/feed-4-360.webp" alt="" width="360" height="480" loading="lazy" decoding="async"><figcaption><i></i><i></i><b>3 990 ₽</b></figcaption></figure>
+          <figure class="tile"><img src="assets/img/feed-5-360.webp" alt="" width="360" height="480" loading="lazy" decoding="async"><figcaption><i></i><i></i><b>4 420 ₽</b></figcaption></figure>
+          <figure class="tile"><img src="assets/img/feed-6-360.webp" alt="" width="360" height="480" loading="lazy" decoding="async"><figcaption><i></i><i></i><b>3 760 ₽</b></figcaption></figure>
+          <figure class="tile"><img src="assets/img/feed-7-360.webp" alt="" width="360" height="480" loading="lazy" decoding="async"><figcaption><i></i><i></i><b>4 080 ₽</b></figcaption></figure>
+          <figure class="tile"><img src="assets/img/feed-8-360.webp" alt="" width="360" height="480" loading="lazy" decoding="async"><figcaption><i></i><i></i><b>4 350 ₽</b></figcaption></figure>
+        </div>
+        <p class="feed-note label">соседи условные: тот же товар, фото фабрики у разных продавцов</p>
+      </div>
+
+      <figure class="card-stage sheet" aria-label="Слайд карточки вакуумного упаковщика QH-17">
+        <div class="slide">
+          <div class="l-white"></div>
+          <img class="l-scene" src="assets/img/qh17-scene-720.webp" srcset="assets/img/qh17-scene-720.webp 720w, assets/img/qh17-scene-1086.webp 1086w" sizes="(min-width: 1024px) 560px, 92vw" alt="" width="1086" height="1448" decoding="async">
+          <img class="l-product" src="assets/img/qh17-cut-900.webp" srcset="assets/img/qh17-cut-560.webp 560w, assets/img/qh17-cut-900.webp 900w, assets/img/qh17-cut-1400.webp 1400w" sizes="(min-width: 1024px) 560px, 92vw" alt="Вакуумный упаковщик QH-17 на белом фоне" width="1400" height="425" fetchpriority="high">
+          <svg class="l-select" viewBox="0 0 300 400" preserveAspectRatio="none" aria-hidden="true"><rect x="5" y="123" width="290" height="104" rx="9" pathLength="1"/></svg>
+          <svg class="l-grid" viewBox="0 0 300 400" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M18 0V400M282 0V400M0 18H300M0 382H300" class="g-safe"/>
+            <path d="M18 92H282M18 340H282M150 340V382" class="g-zone"/>
+          </svg>
+          <div class="l-head" aria-hidden="true"><b>Свежесть<br>до 5 раз дольше</b><span>Вакуумный упаковщик для дома</span></div>
+          <div class="l-chips" aria-hidden="true"><span>Сухой и влажный режим</span><span>20 пакетов в комплекте</span></div>
+          <img class="l-real" src="assets/img/qh17-slide-720.webp" srcset="assets/img/qh17-slide-420.webp 420w, assets/img/qh17-slide-720.webp 720w, assets/img/qh17-slide-1086.webp 1086w" sizes="(min-width: 1024px) 560px, 92vw" alt="Готовый слайд: вакуумный упаковщик на кухне, заголовок «Свежесть до 5 раз дольше», плашки «Сухой и влажный режим» и «20 пакетов в комплекте»" width="1086" height="1448" loading="lazy" decoding="async">
+        </div>
+        <span class="marks" aria-hidden="true"></span>
+        <figcaption class="stage-cap">
+          <span class="label cap-state">исходник</span>
+          <span class="label">3:4, 900×1200</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="card-credit label">работа для бренда BlackRED, характеристики — со слов производителя</p>
+  </div>
+  <a class="skip" href="#oblozhka">Пропустить сборку</a>
+</section>
+
+<!-- 2. Видеообложка: играет только наша плитка -->
+<section class="block cover" id="oblozhka" aria-labelledby="cover-title">
+  <div class="block-head">
+    <h2 id="cover-title" class="h-section">Обложка играет прямо в ленте</h2>
+    <p>На Wildberries видеообложка проигрывается в выдаче, пока покупатель листает. Остальные плитки стоят. Делаем её из вашего главного фото: товар выполняет своё действие с первой секунды.</p>
+    <p class="price-line"><span>Обложка 6 сек</span> <b class="price">999&nbsp;₽</b></p>
+  </div>
+  <div class="wall" data-scene="cover">
+    <div class="wall-grid">
+      <img src="assets/img/works/sharpener-1-300.webp" alt="" width="300" height="400" loading="lazy" decoding="async">
+      <img src="assets/img/feed-2-360.webp" alt="" width="360" height="480" loading="lazy" decoding="async">
+      <img src="assets/img/works/airfryer-1-300.webp" alt="" width="300" height="400" loading="lazy" decoding="async">
+      <img src="assets/img/hd7000-kit-480.webp" alt="" width="480" height="480" class="sq" loading="lazy" decoding="async">
+      <img src="assets/img/works/knife-1-300.webp" alt="" width="300" height="400" loading="lazy" decoding="async">
+      <img src="assets/img/works/humidifier-1-300.webp" alt="" width="300" height="400" loading="lazy" decoding="async">
+      <img src="assets/img/feed-6-360.webp" alt="" width="360" height="480" loading="lazy" decoding="async">
+      <div class="wall-video">
+        <video class="vid" data-autoplay muted playsinline loop preload="none" poster="assets/video/cover-t16-poster-540.webp" width="540" height="720" aria-label="Видеообложка компьютерных колонок T16: подсветка оживает">
+          <source src="assets/video/cover-t16.mp4" type="video/mp4">
+        </video>
+        <svg class="ring" viewBox="0 0 300 400" preserveAspectRatio="none" aria-hidden="true"><rect x="2" y="2" width="296" height="396" rx="12" pathLength="1"/></svg>
+        <button class="vid-toggle" type="button" aria-label="Пауза">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path class="i-pause" d="M6 4h3v12H6zM11 4h3v12h-3z"/><path class="i-play" d="M6 4l10 6-10 6z"/></svg>
+        </button>
+      </div>
+      <img src="assets/img/works/scissors-1-300.webp" alt="" width="300" height="400" loading="lazy" decoding="async">
+      <img src="assets/img/hd7000-angle45-480.webp" alt="" width="480" height="480" class="sq" loading="lazy" decoding="async">
+      <img src="assets/img/works/soundbar-8-300.webp" alt="" width="300" height="400" loading="lazy" decoding="async">
+      <img src="assets/img/feed-3-360.webp" alt="" width="360" height="480" loading="lazy" decoding="async">
+      <img src="assets/img/works/vacuum-1-300.webp" alt="" width="300" height="400" loading="lazy" decoding="async">
+      <img src="assets/img/works/humidifier-4-300.webp" alt="" width="300" height="400" loading="lazy" decoding="async">
+      <img src="assets/img/feed-7-360.webp" alt="" width="360" height="480" loading="lazy" decoding="async">
+      <img src="assets/img/works/knife-5-300.webp" alt="" width="300" height="400" loading="lazy" decoding="async">
+      <img src="assets/img/works/airfryer-4-300.webp" alt="" width="300" height="400" loading="lazy" decoding="async">
+      <img src="assets/img/works/sharpener-5-300.webp" alt="" width="300" height="400" loading="lazy" decoding="async">
+    </div>
+    <p class="label wall-note">лента условная: в ней наши работы и фото фабрик, обложка колонок — настоящая</p>
+  </div>
+
+  <div class="videos">
+    <figure class="video-card">
+      <div class="sheet sheet-video sheet-tall">
+        <video class="vid" data-autoplay muted playsinline loop preload="none" poster="assets/video/cover-lt-k79-poster-540.webp" width="540" height="960" aria-label="Видеообложка кухонных ножниц LT-K79">
+          <source src="assets/video/cover-lt-k79.mp4" type="video/mp4">
+        </video>
+        <button class="vid-toggle" type="button" aria-label="Пауза">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path class="i-pause" d="M6 4h3v12H6zM11 4h3v12h-3z"/><path class="i-play" d="M6 4l10 6-10 6z"/></svg>
+        </button>
+        <span class="marks" aria-hidden="true"></span>
+      </div>
+      <figcaption><b>Видео 15 сек</b> <span>видеообложка Ozon: открыли карточку — товар уже в деле</span> <b class="price">2&nbsp;499&nbsp;₽</b></figcaption>
+    </figure>
+    <figure class="video-card">
+      <div class="sheet sheet-video sheet-tall">
+        <video class="vid" muted playsinline preload="none" poster="assets/video/reel-a22-poster-720.webp" width="720" height="1280" aria-label="Ролик 30 секунд о колонках A22">
+          <source src="assets/video/reel-a22.mp4" type="video/mp4">
+        </video>
+        <button class="vid-play" type="button">Смотреть ролик</button>
+        <span class="marks" aria-hidden="true"></span>
+      </div>
+      <figcaption><b>Видео 30 сек</b> <span>короткий ролик: товар в деле и главные выгоды</span> <b class="price">4&nbsp;499&nbsp;₽</b></figcaption>
+    </figure>
+    <div class="video-fact">
+      <p class="fact"><span class="fact-num">+16 %</span> По данным Ozon, у карточки с видео конверсия в заказ выше на 16 %.</p>
+      <p><b>Видео 60 сек — 6 999 ₽.</b> Подробный рассказ, когда товар нужно показать со всех сторон.</p>
+      <p class="label">работы для бренда BlackRED, видео показаны без звука</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Прайс -->
+<section class="block prices" id="ceny" aria-labelledby="prices-title">
+  <div class="block-head">
+    <h2 id="prices-title" class="h-section">Что можно заказать</h2>
+    <p>Любой продукт отдельно или пакетом. Цены за один товар. SEO — бесплатно в пакетах.</p>
+  </div>
+  <div class="sheet price-sheet">
+    <div class="price-group">
+      <h3 class="label">в ленте выдачи</h3>
+      <ul>
+        <li><b>Обложка 6 сек</b><span>Главное фото оживает прямо в выдаче WB: товар в деле ещё до клика</span><em class="price">999 ₽</em></li>
+      </ul>
+    </div>
+    <div class="price-group">
+      <h3 class="label">в карточке товара</h3>
+      <ul>
+        <li><b>Видео 15 сек</b><span>Видеообложка Ozon: открыли карточку и сразу видят, как товар работает</span><em class="price">2 499 ₽</em></li>
+        <li><b>Видео 30 сек</b><span>Короткий ролик: товар в деле и главные выгоды</span><em class="price">4 499 ₽</em></li>
+        <li><b>Видео 60 сек</b><span>Подробный рассказ, когда товар нужно показать со всех сторон</span><em class="price">6 999 ₽</em></li>
+        <li><b>Карусель (инфографика)</b><span>7 слайдов в том порядке, в каком выбирает покупатель, и 4 в подарок: характеристики, размеры, комплект, как связаться</span><em class="price">6 999 ₽</em></li>
+        <li><b>Интерьерные фото</b><span>Товар дома, в руках, в подарок: 5, 10 или 15 фото</span><em class="price">1 499 / 1 999 / 2 499 ₽</em></li>
+        <li><b>RICH-контент</b><span>Большой рассказ о товаре под фотографиями, на Ozon и WB</span><em class="price">3 999 ₽</em></li>
+        <li><b>SEO карточки</b><span>Название, описание, характеристики и хештеги под запросы покупателей</span><em class="price price-free">в пакетах бесплатно</em></li>
+      </ul>
+    </div>
+    <div class="price-group">
+      <h3 class="label">на коробке и в коробке</h3>
+      <ul>
+        <li><b>Коробка</b><span>Дизайн на развёртке вашей фабрики — фабрика печатает коробку на русском</span><em class="price">4 499 ₽</em></li>
+        <li><b>Инструкция</b><span>Перевод и вёрстка на русском, схемы фабрики сохраняем</span><em class="price">4 499 ₽</em></li>
+        <li><b>Коробка + инструкция</b><span>Комплект: на 2 999 ₽ дешевле, чем по отдельности</span><em class="price">5 999 ₽</em></li>
+        <li><b>Стайлгайд</b><span>Правила оформления: коробки, инструкции и слайды выглядят как один бренд</span><em class="price">7 999 ₽</em></li>
+      </ul>
+    </div>
+    <div class="price-group">
+      <h3 class="label">съёмка</h3>
+      <ul>
+        <li><b>Фотосъёмка в Китае</b><span>Товар снимают на белом фоне ещё на фабрике — карточку начинаем, пока груз в пути</span><em class="price">3 999 ₽</em></li>
+        <li><b>Видео с блогером</b><span>Человек снимает товар у себя дома, так, как им пользуются на самом деле</span><em class="price">5 999 ₽</em></li>
+      </ul>
+    </div>
+    <span class="marks" aria-hidden="true"></span>
+  </div>
+  <p class="prices-more">Вместе дешевле: <a href="#pakety">пакеты со скидкой 20 и 30 %</a>.</p>
+</section>
+
+<!-- 4. Исходники и паспорт -->
+<section class="scene scene-src" id="ishodniki" data-scene="sources" aria-labelledby="src-title">
+  <div class="scene-sticky src-sticky">
+    <div class="src-copy">
+      <h2 id="src-title" class="h-section">Сначала — исходники</h2>
+      <p>Нейросеть каждый раз заново рисует товар по образцу. По фото с телефона она додумывает детали, и товар меняется от кадра к кадру. Поэтому сначала снимаем товар на белом со всех сторон и пишем паспорт: размеры, кнопки, комплект. Дальше каждый кадр сверяем с ними.</p>
+      <p class="label src-now" aria-hidden="true"><span class="src-now-text">фронт</span></p>
+      <p class="label">саундбар HD7000, работа для бренда BlackRED</p>
+    </div>
+    <div class="src-board" aria-label="Исходники саундбара HD7000">
+      <div class="src-viewer sheet" aria-hidden="true"><span class="marks"></span></div>
+      <ul class="src-grid">
+        <li data-angle="фронт"><img src="assets/img/hd7000-front-480.webp" srcset="assets/img/hd7000-front-480.webp 480w, assets/img/hd7000-front-900.webp 900w" sizes="(min-width: 1024px) 440px, 80vw" alt="Саундбар HD7000 спереди" width="900" height="900" loading="lazy" decoding="async">
+          <svg class="dim" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 66H92M8 62V70M92 62V70" pathLength="1"/></svg><span class="dim-label label">86,4 см</span><span class="cell-label label">фронт</span></li>
+        <li data-angle="45°"><img src="assets/img/hd7000-angle45-480.webp" srcset="assets/img/hd7000-angle45-480.webp 480w, assets/img/hd7000-angle45-900.webp 900w" sizes="(min-width: 1024px) 440px, 80vw" alt="Под углом 45 градусов" width="900" height="900" loading="lazy" decoding="async"><span class="cell-label label">45°</span></li>
+        <li data-angle="бок"><img src="assets/img/hd7000-side-480.webp" srcset="assets/img/hd7000-side-480.webp 480w, assets/img/hd7000-side-900.webp 900w" sizes="(min-width: 1024px) 440px, 80vw" alt="Торец с кнопками" width="900" height="900" loading="lazy" decoding="async"><span class="cell-label label">бок</span></li>
+        <li data-angle="тыл"><img src="assets/img/hd7000-back-480.webp" srcset="assets/img/hd7000-back-480.webp 480w, assets/img/hd7000-back-900.webp 900w" sizes="(min-width: 1024px) 440px, 80vw" alt="Сзади, разъёмы" width="900" height="900" loading="lazy" decoding="async"><span class="cell-label label">тыл</span></li>
+        <li data-angle="детали"><img src="assets/img/hd7000-details-480.webp" srcset="assets/img/hd7000-details-480.webp 480w, assets/img/hd7000-details-900.webp 900w" sizes="(min-width: 1024px) 440px, 80vw" alt="Детали крупно: кнопки, разъёмы, сетка" width="900" height="900" loading="lazy" decoding="async"><span class="cell-label label">детали</span></li>
+        <li data-angle="масштаб"><img src="assets/img/hd7000-scale-480.webp" srcset="assets/img/hd7000-scale-480.webp 480w, assets/img/hd7000-scale-900.webp 900w" sizes="(min-width: 1024px) 440px, 80vw" alt="Рядом с листом A4 для масштаба" width="900" height="900" loading="lazy" decoding="async"><span class="cell-label label">масштаб</span></li>
+        <li data-angle="комплект"><img src="assets/img/hd7000-kit-480.webp" srcset="assets/img/hd7000-kit-480.webp 480w, assets/img/hd7000-kit-900.webp 900w" sizes="(min-width: 1024px) 440px, 80vw" alt="Комплект: коробка, пульт, кабели, инструкция" width="900" height="900" loading="lazy" decoding="async"><span class="cell-label label">комплект</span></li>
+        <li class="src-passport" data-angle="паспорт"><img src="assets/img/hd7000-passport-420.webp" srcset="assets/img/hd7000-passport-420.webp 420w, assets/img/hd7000-passport-760.webp 760w" sizes="(min-width: 1024px) 220px, 40vw" alt="Первая страница паспорта товара HD7000: характеристики и габариты" width="760" height="1075" loading="lazy" decoding="async"><span class="cell-label label">паспорт товара</span></li>
+      </ul>
+    </div>
+  </div>
+  <a class="skip" href="#korobka">Пропустить исходники</a>
+</section>
+
+<!-- 5–6. Коробка: развёртка рисуется, печатается, складывается, товар ложится внутрь -->
+<section class="scene scene-box" id="korobka" data-scene="box" aria-labelledby="box-title">
+  <div class="scene-sticky box-sticky">
+    <div class="box-copy">
+      <h2 id="box-title" class="h-section">Коробка на русском — на развёртке вашей фабрики</h2>
+      <ol class="box-steps">
+        <li data-step="0"><b>Развёртка</b> Берём файл фабрики: размеры, клапаны, линии реза и сгиба</li>
+        <li data-step="1"><b>Печать</b> Дизайн ложится на каждую грань, обязательные надписи — на русском</li>
+        <li data-step="2"><b>Сборка</b> Складываем 3D-макет: видно, как коробка выглядит на полке, до печати тиража</li>
+        <li data-step="3"><b>Упаковка</b> Товар ложится на место, сверху — инструкция на русском</li>
+        <li data-step="4"><b>Готово</b> Крышка закрыта, можно на склад</li>
+      </ol>
+      <p class="price-line"><span>Коробка</span> <b class="price">4&nbsp;499&nbsp;₽</b> <span>Коробка + инструкция</span> <b class="price">5&nbsp;999&nbsp;₽</b></p>
+    </div>
+    <div class="box-stage" aria-hidden="true">
+      <div class="box-cam">
+        <div class="box-sheet">
+          <div class="face f-bottom" data-face="bottom">
+            <i class="skin out"><img src="assets/img/box-barcode.png" alt="" class="bottom-bars" width="226" height="100" loading="lazy"><span class="bottom-eac">EAC</span></i><i class="skin in"></i>
+            <div class="face f-back" data-face="back">
+              <i class="skin out"></i><i class="skin in"></i>
+              <div class="face f-tab f-tab-l" data-face="tab-bl"><i class="skin out"></i><i class="skin in"></i></div>
+              <div class="face f-tab f-tab-r" data-face="tab-br"><i class="skin out"></i><i class="skin in"></i></div>
+              <div class="face f-lid" data-face="lid">
+                <i class="skin out"></i><i class="skin in"></i>
+                <div class="face f-tuck" data-face="tuck"><i class="skin out"></i><i class="skin in"></i></div>
+              </div>
+            </div>
+            <div class="face f-front" data-face="front">
+              <i class="skin out"></i><i class="skin in"></i>
+              <div class="face f-tab f-tab-l" data-face="tab-fl"><i class="skin out"></i><i class="skin in"></i></div>
+              <div class="face f-tab f-tab-r" data-face="tab-fr"><i class="skin out"></i><i class="skin in"></i></div>
+            </div>
+            <div class="face f-side f-side-l" data-face="side-l"><i class="skin out"></i><i class="skin in"></i></div>
+            <div class="face f-side f-side-r" data-face="side-r"><i class="skin out"></i><i class="skin in"></i></div>
+            <div class="inbox inbox-product"><img src="assets/img/qh17-top-900.webp" alt="" width="900" height="376" loading="lazy" decoding="async"></div>
+            <div class="inbox inbox-manual"><img src="assets/img/manual-1-320.webp" alt="" width="320" height="442" loading="lazy" decoding="async"></div>
+          </div>
+          <svg class="dieline" viewBox="-30 -30 712 696" aria-hidden="true">
+            <path class="cut" pathLength="1" d="M111 28 Q111 0 139 0 H513 Q541 0 541 28 V221 L559 229 V324 L541 332 H652 V525 H541 L559 533 V628 L541 636 H111 L93 628 V533 L111 525 H0 V332 H111 L93 324 V229 L111 221 Z"/>
+            <path class="fold" d="M111 28H541M111 221H541M111 332H541M111 525H541M111 221V332M541 221V332M111 332V525M541 332V525M111 525V636M541 525V636"/>
+            <g class="marks-g">
+              <path class="dim-line" d="M111 -14H541M111 -20V-8M541 -20V-8M-14 332V525M-20 332H-8M-20 525H-8M666 525V636M660 525H672M660 636H672"/>
+              <text x="326" y="-20" class="t-dim">430 мм</text>
+              <text x="-20" y="428" class="t-dim t-v" transform="rotate(-90 -20 428)">193 мм</text>
+              <text x="672" y="580" class="t-dim t-v" transform="rotate(90 672 580)">111 мм</text>
+              <text x="326" y="19" class="t-mark">клапан</text>
+              <text x="326" y="214" class="t-mark t-fold">сгиб</text>
+              <text x="566" y="282" class="t-mark t-glue">клей</text>
+              <text x="40" y="320" class="t-mark t-cut">рез</text>
+            </g>
+          </svg>
+        </div>
+        <div class="box-shadow"></div>
+      </div>
+    </div>
+    <div class="box-static" aria-hidden="true"></div>
+  </div>
+  <a class="skip" href="#instrukciya">Пропустить коробку</a>
+</section>
+
+<!-- 7. Инструкция листается -->
+<section class="scene scene-manual" id="instrukciya" data-scene="manual" aria-labelledby="manual-title">
+  <div class="scene-sticky manual-sticky">
+    <div class="manual-copy">
+      <h2 id="manual-title" class="h-section">Инструкция, которую поймёт покупатель</h2>
+      <p>Переводим инструкцию фабрики на русский и верстаем заново: безопасность, управление, первый запуск, уход, характеристики. Все цифры и названия кнопок — как на товаре. Отдаём файл, готовый к печати.</p>
+      <p class="price-line"><span>Инструкция</span> <b class="price">4&nbsp;499&nbsp;₽</b></p>
+      <p class="label">инструкция QH-17, работа для бренда BlackRED</p>
+    </div>
+    <div class="book-stage">
+      <div class="book" aria-label="Страницы инструкции QH-17">
+        <div class="book-base"><img src="assets/img/manual-7-320.webp" srcset="assets/img/manual-7-320.webp 320w, assets/img/manual-7-620.webp 620w" sizes="(min-width: 1024px) 300px, 44vw" alt="Страница: характеристики" width="620" height="856" loading="lazy" decoding="async"></div>
+        <div class="leaf" data-leaf="0">
+          <div class="leaf-face leaf-front"><img src="assets/img/manual-1-320.webp" srcset="assets/img/manual-1-320.webp 320w, assets/img/manual-1-620.webp 620w" sizes="(min-width: 1024px) 300px, 44vw" alt="Обложка инструкции" width="620" height="856" loading="lazy" decoding="async"></div>
+          <div class="leaf-face leaf-back"><img src="assets/img/manual-2-320.webp" srcset="assets/img/manual-2-320.webp 320w, assets/img/manual-2-620.webp 620w" sizes="(min-width: 1024px) 300px, 44vw" alt="Страница: техника безопасности" width="620" height="856" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="leaf" data-leaf="1">
+          <div class="leaf-face leaf-front"><img src="assets/img/manual-3-320.webp" srcset="assets/img/manual-3-320.webp 320w, assets/img/manual-3-620.webp 620w" sizes="(min-width: 1024px) 300px, 44vw" alt="Страница: управление прибором" width="620" height="856" loading="lazy" decoding="async"></div>
+          <div class="leaf-face leaf-back"><img src="assets/img/manual-4-320.webp" srcset="assets/img/manual-4-320.webp 320w, assets/img/manual-4-620.webp 620w" sizes="(min-width: 1024px) 300px, 44vw" alt="Страница: первый запуск" width="620" height="856" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="leaf" data-leaf="2">
+          <div class="leaf-face leaf-front"><img src="assets/img/manual-5-320.webp" srcset="assets/img/manual-5-320.webp 320w, assets/img/manual-5-620.webp 620w" sizes="(min-width: 1024px) 300px, 44vw" alt="Страница: режимы упаковки" width="620" height="856" loading="lazy" decoding="async"></div>
+          <div class="leaf-face leaf-back"><img src="assets/img/manual-6-320.webp" srcset="assets/img/manual-6-320.webp 320w, assets/img/manual-6-620.webp 620w" sizes="(min-width: 1024px) 300px, 44vw" alt="Страница: уход и хранение" width="620" height="856" loading="lazy" decoding="async"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="skip" href="#seo">Пропустить инструкцию</a>
+</section>
+
+<!-- 8. SEO печатается под запросы -->
+<section class="scene scene-seo" id="seo" data-scene="seo" aria-labelledby="seo-title">
+  <div class="scene-sticky seo-sticky">
+    <div class="seo-copy">
+      <h2 id="seo-title" class="h-section">Название, которое находят</h2>
+      <p>Сначала узнаём, как покупатели ищут товар, потом пишем название, описание и характеристики под эти запросы. Каждое слово — один раз, характеристики заполнены до конца.</p>
+      <ul class="queries" aria-label="Запросы покупателей">
+        <li data-q="0">вакуумный упаковщик</li>
+        <li data-q="1">вакууматор для продуктов</li>
+        <li data-q="2">для дома</li>
+        <li data-q="3">с пакетами</li>
+        <li data-q="4">запайщик пакетов</li>
+      </ul>
+      <p class="price-line"><span>SEO карточки</span> <b class="price">в пакетах бесплатно</b></p>
+    </div>
+    <div class="sheet seo-sheet">
+      <dl class="seo-card">
+        <dt class="label">название</dt>
+        <dd class="seo-title" data-type="title"><span class="typed" aria-hidden="true"></span><span class="sr-only">Вакуумный упаковщик QH-17, вакууматор для продуктов для дома с пакетами</span></dd>
+        <dt class="label">описание</dt>
+        <dd class="seo-desc" data-type="desc"><span class="typed" aria-hidden="true"></span><span class="sr-only">Откачивает воздух и запаивает пакет одной кнопкой. Два режима: для сухих и влажных продуктов. В комплекте 20 пакетов и шланг для контейнеров. Работает и как запайщик пакетов без откачки.</span></dd>
+        <dt class="label">характеристики</dt>
+        <dd>
+          <table class="seo-specs">
+            <tr><th>Мощность</th><td>110 Вт</td></tr>
+            <tr><th>Ширина пакета</th><td>до 320 мм</td></tr>
+            <tr><th>Питание</th><td>100–240 В, 50–60 Гц</td></tr>
+            <tr><th>Размер прибора</th><td>405 × 160 × 85 мм</td></tr>
+            <tr><th>Запайка</th><td>6–13 секунд</td></tr>
+          </table>
+        </dd>
+      </dl>
+      <span class="marks" aria-hidden="true"></span>
+    </div>
+  </div>
+  <a class="skip" href="#rich">Пропустить SEO</a>
+</section>
+
+<!-- 9. RICH прокручивается в рамке телефона -->
+<section class="block rich" id="rich" data-scene="rich" aria-labelledby="rich-title">
+  <div class="rich-copy">
+    <h2 id="rich-title" class="h-section">RICH: рассказ под фотографиями</h2>
+    <p>Для тех, кто листает карточку до конца: блок из широких баннеров под фото — как устроен товар, где пригодится, что в коробке. Делаем для Ozon и WB в одном стиле со слайдами.</p>
+    <p class="price-line"><span>RICH-контент</span> <b class="price">3&nbsp;999&nbsp;₽</b></p>
+    <p class="label">саундбар для компьютера, работа для бренда BlackRED</p>
+  </div>
+  <div class="phone">
+    <div class="phone-screen" data-lenis-prevent tabindex="0" aria-label="RICH-блок саундбара, прокручивается">
+      <div class="phone-feed">
+        <img src="assets/img/rich-1-760.webp" alt="Свет и звук на вашем столе: подсветка 7 цветов" width="760" height="380" loading="lazy" decoding="async">
+        <img src="assets/img/rich-2-760.webp" alt="Свет по настроению: 7 цветов плавно переливаются" width="760" height="380" loading="lazy" decoding="async">
+        <img src="assets/img/rich-3-760.webp" alt="Меньше места на столе: один саундбар вместо двух колонок" width="760" height="380" loading="lazy" decoding="async">
+        <img src="assets/img/rich-4-760.webp" alt="Два штекера, и всё играет: AUX и USB" width="760" height="380" loading="lazy" decoding="async">
+        <img src="assets/img/rich-5-760.webp" alt="Один саундбар, четыре сцены" width="760" height="380" loading="lazy" decoding="async">
+        <img src="assets/img/rich-6-760.webp" alt="Отвечаем на вопросы покупателей" width="760" height="380" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Работы студии -->
+<section class="block works" id="raboty" data-scene="works" aria-labelledby="works-title">
+  <div class="block-head">
+    <h2 id="works-title" class="h-section">Работы студии</h2>
+    <p>Карусели для товаров бренда BlackRED. Выберите товар — слайды идут в том порядке, в каком их видит покупатель.</p>
+  </div>
+  <div class="works-tabs" role="tablist" aria-label="Товары">
+    <button role="tab" aria-selected="true" aria-controls="works-panel" data-set="vacuum" data-n="8">Вакуумный упаковщик</button>
+    <button role="tab" aria-selected="false" aria-controls="works-panel" data-set="sharpener" data-n="6" tabindex="-1">Точилка для ножей</button>
+    <button role="tab" aria-selected="false" aria-controls="works-panel" data-set="knife" data-n="8" tabindex="-1">Шеф-нож</button>
+    <button role="tab" aria-selected="false" aria-controls="works-panel" data-set="airfryer" data-n="9" tabindex="-1">Аэрогриль</button>
+    <button role="tab" aria-selected="false" aria-controls="works-panel" data-set="humidifier" data-n="8" tabindex="-1">Увлажнитель</button>
+    <button role="tab" aria-selected="false" aria-controls="works-panel" data-set="speakers" data-n="8" tabindex="-1">Колонки</button>
+    <button role="tab" aria-selected="false" aria-controls="works-panel" data-set="scissors" data-n="7" tabindex="-1">Ножницы</button>
+    <button role="tab" aria-selected="false" aria-controls="works-panel" data-set="soundbar" data-n="9" tabindex="-1">Саундбар</button>
+  </div>
+  <div class="works-panel" id="works-panel" role="tabpanel" aria-label="Слайды карусели">
+    <ul class="works-strip" tabindex="0" data-lenis-prevent>
+      <li><img src="assets/img/works/vacuum-1-600.webp" alt="Слайд 1" width="600" height="800" loading="lazy" decoding="async"></li>
+      <li><img src="assets/img/works/vacuum-2-600.webp" alt="Слайд 2" width="600" height="800" loading="lazy" decoding="async"></li>
+      <li><img src="assets/img/works/vacuum-3-600.webp" alt="Слайд 3" width="600" height="800" loading="lazy" decoding="async"></li>
+      <li><img src="assets/img/works/vacuum-4-600.webp" alt="Слайд 4" width="600" height="800" loading="lazy" decoding="async"></li>
+      <li><img src="assets/img/works/vacuum-5-600.webp" alt="Слайд 5" width="600" height="800" loading="lazy" decoding="async"></li>
+      <li><img src="assets/img/works/vacuum-6-600.webp" alt="Слайд 6" width="600" height="800" loading="lazy" decoding="async"></li>
+      <li><img src="assets/img/works/vacuum-7-600.webp" alt="Слайд 7" width="600" height="800" loading="lazy" decoding="async"></li>
+      <li><img src="assets/img/works/vacuum-8-600.webp" alt="Слайд 8" width="600" height="800" loading="lazy" decoding="async"></li>
+    </ul>
+    <div class="works-nav">
+      <button class="btn btn-line" type="button" data-dir="-1">Назад</button>
+      <button class="btn btn-line" type="button" data-dir="1">Дальше</button>
+      <p class="label">работы для бренда BlackRED, характеристики на слайдах — со слов производителя</p>
+    </div>
+  </div>
+</section>
+
+<!-- 11. Пакеты -->
+<section class="block packs" id="pakety" data-scene="packs" aria-labelledby="packs-title">
+  <div class="block-head">
+    <h2 id="packs-title" class="h-section">Пакеты: всё сразу и дешевле</h2>
+    <p>Чем больше пакет, тем больше скидка. В оба пакета SEO входит бесплатно.</p>
+  </div>
+  <div class="packs-row">
+    <article class="sheet pack" aria-labelledby="p1">
+      <h3 id="p1" class="h-pack">Карточка под ключ</h3>
+      <p>Всё, что видит покупатель, от выдачи до последнего экрана карточки.</p>
+      <ul class="pack-items">
+        <li><span>Обложка 6 сек</span><s>999 ₽</s></li>
+        <li><span>Видео 30 сек</span><s>4 499 ₽</s></li>
+        <li><span>Карусель: 7 слайдов + 4 в подарок</span><s>6 999 ₽</s></li>
+        <li><span>RICH-контент</span><s>3 999 ₽</s></li>
+        <li><span>SEO карточки</span><em>в подарок</em></li>
+      </ul>
+      <p class="pack-sum"><span>по прайсу</span> <s class="pack-full" data-count="16496">16 496 ₽</s></p>
+      <p class="pack-price"><b class="price" data-count="13199">13 199 ₽</b> <span class="sticker">−20 %, экономия 3 297 ₽</span></p>
+      <a class="btn btn-k" href="https://t.me/kontent_zavod" target="_blank" rel="noopener">Заказать карточку</a>
+      <span class="marks" aria-hidden="true"></span>
+    </article>
+    <article class="sheet pack pack-all" aria-labelledby="p2">
+      <h3 id="p2" class="h-pack">Всё включено</h3>
+      <p>Для тех, кто везёт товар из Китая: карточка, коробка и инструкция в одном стиле.</p>
+      <ul class="pack-items">
+        <li><span>Всё из «Карточки под ключ»</span><s>16 496 ₽</s></li>
+        <li><span>Коробка + инструкция</span><s>5 999 ₽</s></li>
+        <li><span>Стайлгайд</span><em>в подарок, вместо 7 999 ₽</em></li>
+      </ul>
+      <p class="pack-sum"><span>по прайсу</span> <s class="pack-full" data-count="22495">22 495 ₽</s></p>
+      <p class="pack-price"><b class="price" data-count="15699">15 699 ₽</b> <span class="sticker">−30 %, экономия 6 796 ₽</span></p>
+      <p class="pack-note">На 2 500 ₽ дороже «Карточки под ключ» — и уже с коробкой, инструкцией и стайлгайдом.</p>
+      <a class="btn btn-k" href="https://t.me/kontent_zavod" target="_blank" rel="noopener">Заказать всё включено</a>
+      <span class="marks" aria-hidden="true"></span>
+    </article>
+  </div>
+  <p class="packs-bonus"><span class="sticker">−10 %</span> на первый заказ: подпишитесь на канал «Проще» и разрешите показать работу как пример.</p>
+</section>
+
+<!-- 12. Как идёт заказ -->
+<section class="block order" id="zakaz" data-scene="order" aria-labelledby="order-title">
+  <div class="block-head">
+    <h2 id="order-title" class="h-section">Как идёт заказ</h2>
+    <p>Пока товар едет из Китая, мы успеваем всё. К приезду на склад карточка уже готова.</p>
+  </div>
+  <div class="track" aria-hidden="true">
+    <span class="track-end track-from label">фабрика в Китае</span>
+    <span class="track-line"><i></i></span>
+    <span class="track-end track-to label">склад маркетплейса</span>
+    <span class="track-cargo label">товар в пути</span>
+  </div>
+  <ol class="order-steps">
+    <li><b>Пишете в Telegram</b> Что за товар и что нужно</li>
+    <li><b>Договариваемся</b> Состав, цена и срок — до начала работы</li>
+    <li><b>Присылаете, что есть</b> Фото с телефона, инструкцию, коробку</li>
+    <li><b>Делаем исходники</b> Товар на белом со всех сторон и паспорт товара</li>
+    <li><b>Изучаем конкурентов</b> И запросы покупателей — для SEO</li>
+    <li><b>Делаем контент</b> Человек проверяет каждый кадр по паспорту</li>
+    <li><b>Показываем превью</b> Две правки бесплатно</li>
+    <li><b>Отдаём файлы</b> Ссылкой на папку — к приезду товара</li>
+  </ol>
+  <div class="order-cols">
+    <div class="sheet order-send">
+      <h3 class="h-pack">Что прислать</h3>
+      <ul class="ticks">
+        <li>Фото товара на телефон со всех сторон, при дневном свете</li>
+        <li>Кнопки, разъёмы и логотип — крупно</li>
+        <li>Одно фото в руке или рядом со смартфоном — по нему видно размер</li>
+        <li>Размеры и вес</li>
+        <li>Коробку со всех сторон и инструкцию фабрики — можно на китайском</li>
+        <li>Для коробки: развёртку от фабрики, изготовителя и адрес, импортёра, страну, документ о соответствии</li>
+        <li>Ссылку на карточку, если она уже есть, логотип и цвета бренда</li>
+      </ul>
+      <p class="note">Товар ещё в Китае? Попросите фабрику снять его по этому списку или закажите съёмку в Китае.</p>
+      <span class="marks" aria-hidden="true"></span>
+    </div>
+    <div class="order-terms">
+      <h3 class="h-pack">Условия</h3>
+      <dl>
+        <dt>Оплата после результата</dt><dd>Первые 10 заказов студии оплачиваются после того, как вы приняли работу. Дальше — 50 % до начала и 50 % после.</dd>
+        <dt>Две правки бесплатно</dt><dd>Каждая следующая — 1 000 ₽.</dd>
+        <dt>Превью и файлы</dt><dd>Превью приходит с водяным знаком, готовые файлы — ссылкой на папку после оплаты.</dd>
+        <dt>−10 % за «Проще»</dt><dd>Скидка на первый заказ за подписку на канал «Проще» и разрешение показать работу как пример.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- 13. Партнёрам -->
+<section class="block partners" id="partneram" aria-labelledby="partners-title">
+  <div class="partners-inner">
+    <h2 id="partners-title" class="h-section">Возите товары продавцов? Получайте 15&nbsp;% с&nbsp;их заказов</h2>
+    <ul class="partners-list">
+      <li>Карго и фулфилменты видят товар раньше всех — ещё до склада.</li>
+      <li>Посоветуйте студию клиенту: он получает карточку к приезду товара, вы — 15 % с его заказов.</li>
+      <li>У вас личный промокод, заказы по нему считаем мы, выплаты — раз в месяц.</li>
+      <li>Для начала бесплатно сделаем видеообложку для одного вашего клиента — покажете на живом примере.</li>
+    </ul>
+    <div class="hero-actions">
+      <a class="btn btn-k" href="https://t.me/kontent_zavod" target="_blank" rel="noopener">Стать партнёром</a>
+      <a class="btn btn-line" href="partneram/">Условия для партнёров</a>
+    </div>
+  </div>
+</section>
+
+<!-- 14. Частые вопросы -->
+<section class="block faq" id="voprosy" aria-labelledby="faq-title">
+  <h2 id="faq-title" class="h-section">Частые вопросы</h2>
+  <div class="faq-list">
+    <details><summary>Товар ещё в пути. Можно начать?</summary><p>Да, ради этого студия и работает. Хватит фото с телефона — ваших или от фабрики. Если фото нет, можно заказать съёмку в Китае.</p></details>
+    <details><summary>У меня только фото с телефона. Подойдёт?</summary><p>Подойдёт. Из них делаем чистые фото на белом фоне. Снимите товар со всех сторон при дневном свете и один раз в руке.</p></details>
+    <details><summary>Коробка и инструкция на китайском. Что делать?</summary><p>Пришлите их фото и развёртку коробки. Переведём инструкцию и сделаем дизайн коробки на русском, а напечатает её фабрика. Обязательные надписи сверяем со списком требований для вашего товара.</p></details>
+    <details><summary>Нейросети не исказят товар?</summary><p>Сначала делаем паспорт товара: размеры, детали, кнопки. Каждый кадр сверяем с ним и с исходниками. Если что-то не совпадает — переделываем.</p></details>
+    <details><summary>Сколько ждать?</summary><p>Зависит от состава заказа. Срок называем до начала работы и записываем в договорённость.</p></details>
+    <details><summary>Чем это лучше карточки «как у всех»?</summary><p>Перед работой смотрим до 10 конкурентов: что показывают все и чего не показывает никто. Отталкиваемся от второго.</p></details>
+    <details><summary>Как платить?</summary><p>Первые 10 заказов студии оплачиваются после результата, дальше 50/50. Превью приходит с водяным знаком, готовые файлы — после оплаты.</p></details>
+    <details><summary>А если не понравится?</summary><p>Две правки бесплатно. Каждая следующая — 1 000 ₽.</p></details>
+  </div>
+</section>
+
+<!-- 15. Финал -->
+<section class="block final" id="svyaz" aria-labelledby="final-title">
+  <h2 id="final-title" class="h-display h-final">Товар уже едет. Пусть карточка будет готова раньше него</h2>
+  <div class="final-row">
+    <a class="btn btn-k btn-big" href="https://t.me/kontent_zavod" target="_blank" rel="noopener">Написать в Telegram</a>
+    <!-- ЗАГЛУШКА: ник студии -->
+    <p><b>@kontent_zavod</b><br>Пришлите фото товара — подскажем, с чего начать, и посчитаем цену.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p><b>Контент завод</b> — студия контента для карточек Wildberries и Ozon. Часть экосистемы канала «Проще».</p>
+  <p class="label">товар готов к продаже до прибытия на склад</p>
+  <!-- ЗАГЛУШКА: реквизиты ИП, политика обработки данных — когда появятся -->
+  <p class="label">© 2026 Контент завод</p>
+</footer>
+
+<div class="dock" aria-label="Быстрые действия">
+  <a class="btn btn-line" href="#ceny">Цены</a>
+  <a class="btn btn-k" href="https://t.me/kontent_zavod" target="_blank" rel="noopener">Написать в Telegram</a>
+</div>
+</body>
+</html>
