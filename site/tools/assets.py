@@ -3,7 +3,8 @@
 Исходники не меняются: читаем из папки студии на Рабочем столе, пишем копии в site/assets/.
 Запуск из корня репозитория:
     uv run --no-project --with opencv-python-headless --with numpy --with pillow python site/tools/assets.py [шаг ...]
-Шаги: qh17 slide neighbors box manual hd7000 works rich video  (без аргументов — все).
+Шаги: qh17 qh17top slide neighbors box manual hd7000 works rich video  (без аргументов — все).
+Картинка assets/img/box-closed-900.webp — снимок собранной 3D-коробки с самого сайта (для режима без движения).
 """
 import subprocess
 import sys

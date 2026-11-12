@@ -57,7 +57,7 @@ function initLenis() {
   const s = document.createElement('script');
   s.src = 'vendor/lenis.min.js';
   s.onload = () => {
-    const lenis = new window.Lenis({ autoRaf: false, lerp: 0.11, anchors: { offset: -72 }, allowNestedScroll: true });
+    const lenis = new window.Lenis({ autoRaf: false, lerp: 0.11, anchors: { offset: 56 }, allowNestedScroll: true });
     lenis.on('scroll', ScrollTrigger.update);
     gsap.ticker.add((time) => lenis.raf(time * 1000));
     gsap.ticker.lagSmoothing(0);
