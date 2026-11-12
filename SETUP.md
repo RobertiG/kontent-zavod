@@ -33,8 +33,8 @@
 **Шаг 0. Где ты работаешь.** `echo ok` выполняется? Нет (обычный чат) — «Откройте Claude → Code → Local → Select folder и повторите». Система: `uname -s`.
 
 **Шаг 1. Инструменты:** git и gh (версии правил и GitHub), ffmpeg (видео), ImageMagick (сравнение картинок), poppler (просмотр PDF).
-- Mac: `xcode-select --install` (если нет git), Homebrew (brew.sh), затем `brew install gh ffmpeg imagemagick poppler`. Windows: `winget install --id Git.Git -e`, `winget install --id GitHub.cli -e`, `winget install --id Gyan.FFmpeg -e`, `winget install --id ImageMagick.ImageMagick -e`, poppler — по ссылке из `winget search poppler`.
-- Проверка: `git --version && gh --version && ffmpeg -version | head -1 && magick -version | head -1 && pdftoppm -v`.
+- Mac: `xcode-select --install` (если нет git), Homebrew (brew.sh), затем `brew install gh ffmpeg imagemagick poppler node uv` (node — для плагина браузера, uv — для проверочных скриптов) и Google Chrome (google.com/chrome). Windows: `winget install --id Git.Git -e`, `winget install --id GitHub.cli -e`, `winget install --id Gyan.FFmpeg -e`, `winget install --id ImageMagick.ImageMagick -e`, poppler — по ссылке из `winget search poppler`.
+- Проверка: `git --version && gh --version && ffmpeg -version | head -1 && magick -version | head -1 && pdftoppm -v && node -v && uv --version`.
 
 **Шаг 2. GitHub и репозиторий.** `gh auth status`; не вошли — `gh auth login --hostname github.com --git-protocol https --web` (покажи код из 8 знаков, сотрудник вводит его на странице), затем `gh auth setup-git`. Затем `cd ~ && gh repo clone RobertiG/kontent-zavod` — только в домашнюю папку, не на Рабочий стол, не в «Документы», iCloud, OneDrive, Яндекс Диск.
 - Проверка: есть `~/kontent-zavod/CLAUDE.md`. Ошибка 404 — приглашение не принято.
@@ -42,7 +42,9 @@
 **Шаг 3. CRM через MCP.** Попроси сотрудника: «Откройте CRM → «Мой аккаунт» → «Выпустить ключ», скопируйте строку для Claude Code, откройте программу «Терминал» (Windows — PowerShell), вставьте строку и нажмите Enter». Строка вида `claude mcp add --transport http uchet https://system.black-red.com/mcp --header "Authorization: Bearer <ключ>"` — имя подключения должно быть **uchet**: на него опираются навыки. Ключ в чат не просить.
 - Проверка: `claude mcp list` — `uchet … ✓ Connected`; затем в следующей сессии вызов `whoami` называет сотрудника и открытые разделы (нужны `content_products` и/или `studio_*`).
 
-**Шаг 4. Google Диск для компьютера.** Скачать с google.com/drive/download, установить, войти под рабочим Google-аккаунтом (руками сотрудника). На Mac в настройках приложения выбрать «Потоковая передача файлов».
+**Шаг 3а. MPStats** (аналитика и SEO). Строку подключения `claude mcp add --transport http mpstats "https://mcp.mpstats.io/mcp?token=<токен>&tools=all"` с токеном даёт Роберт — сотрудник выполняет её в «Терминале» сам, токен в чат не вставлять. Имя подключения — **mpstats**. Проверка: `claude mcp list` — `mpstats … ✓ Connected`. Без него аналитика идёт по страницам маркетплейсов, частоты запросов не проверены.
+
+**Шаг 4. Google Диск для компьютера.** Скачать с google.com/drive/download, установить, войти под рабочим Google-аккаунтом (руками сотрудника). На Mac в настройках приложения выбрать «Потоковая передача файлов». В английской системе папка общих дисков называется «Shared drives»; при первом обращении macOS спросит доступ к файлам Диска — нажать «Разрешить».
 - Проверка: `ls ~/Library/CloudStorage/GoogleDrive-*/"Общие диски"/` (Windows: `G:\Общие диски`) — видны «Студия дизайна» и/или «BlackRED». Нет — Роберту: добавить аккаунт на общий диск.
 
 **Шаг 5. Браузер для генерации.** Нужен плагин Claude Code **chrome-devtools-mcp** (`/plugin` → claude-plugins-official → chrome-devtools-mcp → установить; в настройках проекта он уже указан). Google не пускает в Chrome, который запущен плагином, поэтому вход делается так: закрыть Chrome плагина (`pkill -f chrome-devtools-mcp/chrome-profile`), запустить обычный Chrome с тем же профилем — `open -na "Google Chrome" --args --user-data-dir="$HOME/.cache/chrome-devtools-mcp/chrome-profile" --password-store=basic --use-mock-keychain` — сотрудник входит в Google и открывает gemini.google.com, затем закрыть этот Chrome (`pkill -TERM -f chrome-devtools-mcp/chrome-profile`), чтобы вход сохранился.
