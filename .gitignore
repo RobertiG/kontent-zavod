@@ -5,6 +5,8 @@
 *key*.json
 *token*.json
 *credentials*
+uchet-key.txt
+*key*.txt
 *.pem
 *.p12
 
