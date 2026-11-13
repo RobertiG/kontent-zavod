@@ -1,0 +1,666 @@
+[
+  {
+    "id": "01",
+    "name": "M003 usermanual.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "mm": [
+          210.1,
+          68.1
+        ],
+        "chars": 0
+      },
+      {
+        "page": 2,
+        "mm": [
+          210.1,
+          68.1
+        ],
+        "chars": 0
+      }
+    ],
+    "fonts": [],
+    "textStyles": [],
+    "fills": [],
+    "source": "C:\\Users\\PC\\Downloads\\M003 usermanual.pdf",
+    "sha256": "445b3f9be5a534e797d4c7cbf327e664a4c0b7a5c07fb7a167877aa75e0713e1"
+  },
+  {
+    "id": "02",
+    "name": "M003 Color box outline.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "mm": [
+          650.0,
+          450.0
+        ],
+        "chars": 12
+      }
+    ],
+    "fonts": [
+      [
+        "MicrosoftYaHei",
+        11
+      ]
+    ],
+    "textStyles": [
+      [
+        [
+          72.9,
+          "0xed1c24"
+        ],
+        11
+      ]
+    ],
+    "fills": [],
+    "source": "C:\\Users\\PC\\Downloads\\M003 Color box outline.pdf",
+    "sha256": "c244cccdb91673c516c899d6e79be93e412f665e9c5c52122d5d28585d4455d1"
+  },
+  {
+    "id": "03",
+    "name": "LT-K79 (1).pdf",
+    "pages": [
+      {
+        "page": 1,
+        "mm": [
+          500.0,
+          500.0
+        ],
+        "chars": 1094
+      }
+    ],
+    "fonts": [
+      [
+        "SFProDisplay-Regular",
+        999
+      ],
+      [
+        "SimHei",
+        26
+      ],
+      [
+        "Oswald-Regular",
+        21
+      ],
+      [
+        "Oswald-Light",
+        7
+      ]
+    ],
+    "textStyles": [
+      [
+        [
+          7.0,
+          "0xffffff"
+        ],
+        483
+      ],
+      [
+        [
+          8.0,
+          "0xffffff"
+        ],
+        302
+      ],
+      [
+        [
+          9.8,
+          "0xffffff"
+        ],
+        170
+      ],
+      [
+        [
+          45.2,
+          "0x231f20"
+        ],
+        26
+      ],
+      [
+        [
+          11.6,
+          "0xffffff"
+        ],
+        21
+      ],
+      [
+        [
+          8.0,
+          "0x0"
+        ],
+        16
+      ],
+      [
+        [
+          12.0,
+          "0xffffff"
+        ],
+        15
+      ],
+      [
+        [
+          22.1,
+          "0xffffff"
+        ],
+        8
+      ],
+      [
+        [
+          45.4,
+          "0xffffff"
+        ],
+        7
+      ],
+      [
+        [
+          14.0,
+          "0x0"
+        ],
+        5
+      ]
+    ],
+    "fills": [],
+    "source": "C:\\Users\\PC\\Downloads\\LT-K79 (1).pdf",
+    "sha256": "39e210f986d9ae739d160016723274e3694c9d71dca40559268e1329629dabe6"
+  },
+  {
+    "id": "04",
+    "name": "Т25 инструкция.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 0
+      },
+      {
+        "page": 2,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 0
+      },
+      {
+        "page": 3,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 18
+      },
+      {
+        "page": 4,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 0
+      },
+      {
+        "page": 5,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 0
+      },
+      {
+        "page": 6,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 203
+      }
+    ],
+    "fonts": [
+      [
+        "SFProDisplay-Medium",
+        199
+      ],
+      [
+        "MyriadPro-Regular",
+        15
+      ]
+    ],
+    "textStyles": [
+      [
+        [
+          2.5,
+          "0xffffff"
+        ],
+        124
+      ],
+      [
+        [
+          2.8,
+          "0xffffff"
+        ],
+        59
+      ],
+      [
+        [
+          4.0,
+          "0xffffff"
+        ],
+        15
+      ],
+      [
+        [
+          8.2,
+          "0xffffff"
+        ],
+        12
+      ],
+      [
+        [
+          8.4,
+          "0xffffff"
+        ],
+        4
+      ]
+    ],
+    "fills": [],
+    "source": "C:\\Users\\PC\\Downloads\\Т25 инструкция.pdf",
+    "sha256": "b2c1da43485a9bde664effc939f235661e13a9b50211b95e544dab1f378931a8"
+  },
+  {
+    "id": "05",
+    "name": "A22 белый инструкция.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 9
+      },
+      {
+        "page": 2,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 0
+      },
+      {
+        "page": 3,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 7
+      },
+      {
+        "page": 4,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 0
+      },
+      {
+        "page": 5,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 30
+      },
+      {
+        "page": 6,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 196
+      }
+    ],
+    "fonts": [
+      [
+        "SFProDisplay-Medium",
+        203
+      ],
+      [
+        "Montserrat-Medium",
+        29
+      ],
+      [
+        "SFProDisplay-Regular",
+        1
+      ]
+    ],
+    "textStyles": [
+      [
+        [
+          2.6,
+          "0xffffff"
+        ],
+        124
+      ],
+      [
+        [
+          2.7,
+          "0xffffff"
+        ],
+        59
+      ],
+      [
+        [
+          6.0,
+          "0xffffff"
+        ],
+        29
+      ],
+      [
+        [
+          35.5,
+          "0xffffff"
+        ],
+        8
+      ],
+      [
+        [
+          5.2,
+          "0x231f20"
+        ],
+        8
+      ],
+      [
+        [
+          7.6,
+          "0xffffff"
+        ],
+        4
+      ],
+      [
+        [
+          9.2,
+          "0xffffff"
+        ],
+        1
+      ]
+    ],
+    "fills": [],
+    "source": "C:\\Users\\PC\\Downloads\\A22 белый инструкция.pdf",
+    "sha256": "17199287ced646aa14bb6d3420a00aabaf3a14a35308625c160638fc489b3351"
+  },
+  {
+    "id": "06",
+    "name": "Т25 коробка.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "mm": [
+          797.8,
+          504.6
+        ],
+        "chars": 303
+      }
+    ],
+    "fonts": [
+      [
+        "SFProDisplay-Medium",
+        288
+      ]
+    ],
+    "textStyles": [
+      [
+        [
+          10.8,
+          "0xffffff"
+        ],
+        233
+      ],
+      [
+        [
+          9.2,
+          "0x231f20"
+        ],
+        26
+      ],
+      [
+        [
+          18.9,
+          "0xffffff"
+        ],
+        13
+      ],
+      [
+        [
+          9.0,
+          "0xffffff"
+        ],
+        12
+      ],
+      [
+        [
+          8.5,
+          "0xffffff"
+        ],
+        4
+      ]
+    ],
+    "fills": [],
+    "source": "C:\\Users\\PC\\Downloads\\Т25 коробка.pdf",
+    "sha256": "59f790cca8a76d37b5fdf8479d68c88a17490bc41aed6ebe2899526700a52820"
+  },
+  {
+    "id": "07",
+    "name": "CH808 инструкция.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 0
+      },
+      {
+        "page": 2,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 0
+      },
+      {
+        "page": 3,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 12
+      },
+      {
+        "page": 4,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 0
+      },
+      {
+        "page": 5,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 0
+      },
+      {
+        "page": 6,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 8
+      },
+      {
+        "page": 7,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 518
+      },
+      {
+        "page": 8,
+        "mm": [
+          105.1,
+          145.0
+        ],
+        "chars": 204
+      }
+    ],
+    "fonts": [
+      [
+        "SFProDisplay-Medium",
+        688
+      ],
+      [
+        "MyriadPro-Regular",
+        7
+      ],
+      [
+        "AcuminVariableConcept",
+        1
+      ]
+    ],
+    "textStyles": [
+      [
+        [
+          5.7,
+          "0xffffff"
+        ],
+        295
+      ],
+      [
+        [
+          2.7,
+          "0xffffff"
+        ],
+        124
+      ],
+      [
+        [
+          2.8,
+          "0xffffff"
+        ],
+        60
+      ],
+      [
+        [
+          5.8,
+          "0xffffff"
+        ],
+        55
+      ],
+      [
+        [
+          5.5,
+          "0xffffff"
+        ],
+        48
+      ],
+      [
+        [
+          5.9,
+          "0xffffff"
+        ],
+        29
+      ],
+      [
+        [
+          6.1,
+          "0xffffff"
+        ],
+        23
+      ],
+      [
+        [
+          3.7,
+          "0xffffff"
+        ],
+        15
+      ],
+      [
+        [
+          7.7,
+          "0xffffff"
+        ],
+        11
+      ],
+      [
+        [
+          3.1,
+          "0xfd83ff"
+        ],
+        5
+      ]
+    ],
+    "fills": [],
+    "source": "C:\\Users\\PC\\Downloads\\CH808 инструкция.pdf",
+    "sha256": "74b40ff5e2948bd3999854a7ba2bacd3392bc4d871fa3a8d6db7c0d9d2eb2b9b"
+  },
+  {
+    "id": "08",
+    "name": "Коробка белая А22.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "mm": [
+          1314.6,
+          397.0
+        ],
+        "chars": 265
+      }
+    ],
+    "fonts": [
+      [
+        "SFProDisplay-Medium",
+        254
+      ]
+    ],
+    "textStyles": [
+      [
+        [
+          10.6,
+          "0xffffff"
+        ],
+        233
+      ],
+      [
+        [
+          20.2,
+          "0xffffff"
+        ],
+        13
+      ],
+      [
+        [
+          11.6,
+          "0x231f20"
+        ],
+        4
+      ],
+      [
+        [
+          9.2,
+          "0xffffff"
+        ],
+        4
+      ]
+    ],
+    "fills": [],
+    "source": "C:\\Users\\PC\\Downloads\\Коробка белая А22.pdf",
+    "sha256": "06733d0a24ff1c99aefac70a8c86c32cdd254892eda28c1995bb79cf2417b1e2"
+  }
+]

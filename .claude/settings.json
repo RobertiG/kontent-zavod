@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(uv run crm/crm.py *)",
+      "mcp__uchet__whoami",
+      "mcp__uchet__help",
+      "mcp__uchet__describe",
+      "mcp__uchet__find",
+      "mcp__uchet__get",
+      "mcp__uchet__content_files",
+      "mcp__uchet__content_download",
+      "mcp__uchet__content_upload",
       "Bash(git status*)",
       "Bash(git pull*)",
       "Bash(git log*)",
@@ -10,7 +17,6 @@
       "Bash(git switch *)"
     ],
     "deny": [
-      "Read(~/.config/kontent-zavod/**)",
       "Bash(git push --force*)",
       "Bash(git push -f*)",
       "Bash(git reset --hard*)"
@@ -28,5 +34,8 @@
         ]
       }
     ]
+  },
+  "enabledPlugins": {
+    "chrome-devtools-mcp@claude-plugins-official": true
   }
 }
