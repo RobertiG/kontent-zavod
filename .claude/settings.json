@@ -29,7 +29,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" && if [ \"$(git branch --show-current)\" = main ]; then git pull --ff-only --quiet 2>&1 || echo 'ВНИМАНИЕ: правила не обновились из GitHub — сообщи Роберту'; fi"
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && if [ \"$(git branch --show-current)\" = main ]; then git pull --ff-only --quiet 2>&1 || echo 'ВНИМАНИЕ: правила студии не обновились из GitHub — на компьютере изменены файлы студии'; fi"
           }
         ]
       }
