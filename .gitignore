@@ -49,6 +49,8 @@ uchet-key.txt
 # --- Рабочие и служебные файлы ---
 _work/
 .agents/
+.codex/
+uchet-key*
 .claude/settings.local.json
 CLAUDE.local.md
 .DS_Store
